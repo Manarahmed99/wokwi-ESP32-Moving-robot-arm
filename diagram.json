@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Manar Ahmed",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 26, "left": -142, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -99.85, "left": 125.72, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.1", "servo1:GND", "black", [ "h113.53", "v-227.11" ] ],
+    [ "esp:VIN", "servo1:V+", "red", [ "h-44.83", "v-1.28" ] ],
+    [ "esp:D5", "servo1:PWM", "green", [ "h142.2", "v-146.74" ] ]
+  ]
+}
